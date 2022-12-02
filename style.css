@@ -4,6 +4,10 @@ html, body {
     overflow-x: hidden;
     /* background: black; */
 }
+body{
+    background-color: black;
+
+}
 html{
     font-size: 18px;
 }
@@ -88,6 +92,41 @@ html{
     padding-top: 13px;
     color: white;
     padding: 30px;
+    /* display: block; */
+}
+#education{
+    margin-top: 50px;
+    display: none;
+}
+#skills{
+    display: none;
+    margin-top: 50px;
+
+}
+#overview{
+    display: block;
+    margin-top: 50px;
+}
+.learning{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+.learning_name{
+    width: 70%;
+    text-align: start;
+}
+.learning_year{
+    width: 30%;
+}
+.first_learning{
+    display: flex;
+    flex-direction: row;
+}
+.fixes{
+    height: 50px;
+    background-color: black;
 }
 #contact{
     /* margin-top: 4%; */
@@ -126,6 +165,17 @@ html{
     display: grid;
     grid-template-columns: repeat(3, 33%);
 }
+.skills_container{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+    margin: auto;
+}
+.skill{
+    width: 38%;
+    text-align: center;
+}
 .singluar{
      width: 90%;
 }
@@ -154,11 +204,18 @@ html{
 input{
     width: 100%;
 }
+.about_contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+}
 .a{
     text-decoration: none;
     color: rgb(207, 57, 57);
     color:hsl(0, 0%, 30%);
-
+    cursor: pointer;
     /* color: white; */
     font-size: 1.5rem;
     transition: all .2s ease-in-out; 
@@ -278,6 +335,12 @@ svg:hover{
     .singluar{
          width: 90%;
     }
+    .skills_container{
+        width: 60%;
+    }
+    .skill{
+        width: 40%;
+    }
   }
   @media (max-width: 800px) {
     .projects_container{
@@ -285,6 +348,12 @@ svg:hover{
     }
     .singluar{
          width: 95%;
+    }
+    .skills_container{
+        width: 66%;
+    }
+    .skill{
+        width: 44%;
     }
   }
   @media (max-width: 800px) {
@@ -299,11 +368,17 @@ svg:hover{
          margin: auto;
          padding: 1%;
     }
+    .fixes{
+        height: 100px;
+        background-color: black;
+    }
   }
-  @media (max-width: 600px) {
-    .singluar{
-         width: 50%;
-
+  @media (max-width: 650px) {
+    .skills_container{
+        width: 70%;
+    }
+    .skill{
+        width: 44%;
     }
   }
   @media (max-width: 600px) {
@@ -311,11 +386,38 @@ svg:hover{
     .singluar{
          width: 55%;
     }
+    .skills_container{
+        width: 80%;
+    }
+    .about_contain{
+        width: 73%;
+    }
+  }
+  @media (max-width: 520px) {
+    .skills_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        margin: auto;
+        margin-left: 22%;
+    }
+    .skill{
+        width: 50%;
+        text-align: center;
+        margin-top: 4%;
+    }
+    .about_contain{
+        width: 78%;
+    }
   }
   @media (max-width: 500px) {
 
     .singluar{
          width: 60%;
+    }
+    .about_contain{
+        width: 80%;
     }
   }
   @media (max-width: 450px) {
@@ -323,11 +425,27 @@ svg:hover{
     .singluar{
          width: 65%;
     }
+    .skill{
+        width: 55%;
+        margin-top: 4%;
+    }
+    .about_contain{
+        width: 100%;
+        justify-content: space-around;
+        /* justify-content: stretch; */
+    }
   }
   @media (max-width: 400px) {
 
     .singluar{
          width: 70%;
+    }
+    .skill{
+        width: 60%;
+        margin-top: 4%;
+    }
+    .about_contain{
+        width: 100%;
     }
   }
   @media (max-width: 350px) {
@@ -335,10 +453,37 @@ svg:hover{
     .singluar{
          width: 75%;
     }
+    .skill{
+        width: 66%;
+        margin-top: 4%;
+    }
+    .about_contain{
+        width: 100%;
+    }
   }
-  @media (max-width: 300px) {
+  @media (max-width: 329px) {
+
+    .skill{
+        width: 73%;
+        margin-top: 4%;
+    }
+    .skills_container{
+
+        margin-left: 18%;
+    }
+  }
+  @media (max-width: 303px) {
 
     .singluar{
          width: 80%;
     }
+    .skill{
+        width: 82%;
+        margin-top: 4%;
+    }
+    .skills_container{
+
+        margin-left: 15%;
+    }
   }
+  
