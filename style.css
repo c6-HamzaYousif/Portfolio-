@@ -234,6 +234,20 @@ input{
 .txtAre{
     width: 100%;
 }
+.input_contain{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.subbut{
+    margin: auto;
+    /* margin-left: 50px; */
+    align-self: center;
+    /* width: 40%; */
+}
 input{
     border: none;
     outline: none;
@@ -251,11 +265,27 @@ textarea{
     color: white;
     opacity: 0.5;
 }
+.social_media_cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+    /* margin-left: 40px; */
+}
+
+.social_media_cont div{
+    width: 100%;
+    align-items: center;
+    /* margin: auto; */
+}
 svg{
-    width: 80%;
-    height: 80%;
+    width: 65%;
+    height: 65%;
     text-decoration: none;
     color: white;
+    margin: auto;
     transition: all .2s ease-in-out; 
 }
 svg:hover{
@@ -355,6 +385,12 @@ svg:hover{
     .skill{
         width: 44%;
     }
+    .input_contain{
+        width: 50%;
+    }
+    .social_media_cont{
+        width: 50%;
+    }
   }
   @media (max-width: 800px) {
     .projects_container{
@@ -410,6 +446,12 @@ svg:hover{
     .about_contain{
         width: 78%;
     }
+    .input_contain{
+        width: 57%;
+    }
+    .social_media_cont{
+        width: 57%;
+    }
   }
   @media (max-width: 500px) {
 
@@ -434,6 +476,12 @@ svg:hover{
         justify-content: space-around;
         /* justify-content: stretch; */
     }
+    .input_contain{
+        width: 62%;
+    }
+    .social_media_cont{
+        width: 62%;
+    }
   }
   @media (max-width: 400px) {
 
@@ -446,6 +494,12 @@ svg:hover{
     }
     .about_contain{
         width: 100%;
+    }
+    .input_contain{
+        width: 66%;
+    }
+    .social_media_cont{
+        width: 66%;
     }
   }
   @media (max-width: 350px) {
@@ -460,6 +514,12 @@ svg:hover{
     .about_contain{
         width: 100%;
     }
+    .input_contain{
+        width: 70%;
+    }
+    .social_media_cont{
+        width: 70%;
+    }
   }
   @media (max-width: 329px) {
 
@@ -470,6 +530,12 @@ svg:hover{
     .skills_container{
 
         margin-left: 18%;
+    }
+    .input_contain{
+        width: 72%;
+    }
+    .social_media_cont{
+        width: 72%;
     }
   }
   @media (max-width: 303px) {
@@ -484,6 +550,12 @@ svg:hover{
     .skills_container{
 
         margin-left: 15%;
+    }
+    .input_contain{
+        width: 76%;
+    }
+    .social_media_cont{
+        width: 76%;
     }
   }
   
